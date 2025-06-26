@@ -2,6 +2,7 @@
 import Layout from '../components/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { ArrowUp, Users, MapPin } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -25,10 +26,10 @@ const Home = () => {
                 PT Rimau Trisukses Perkasa - Your trusted partner for innovative and reliable maritime lifting solutions across Indonesia.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
+                <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold">
                   <Link to="/services">Our Services</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-900">
+                <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold">
                   <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
@@ -58,7 +59,7 @@ const Home = () => {
               <p className="text-gray-600 mb-6">
                 Our Floating Cranes are equipped with the latest technology, allowing us to handle complex lifting and construction tasks at sea, in ports, and in other challenging environments. We pride ourselves on our unwavering commitment to safety, environmental responsibility, and efficiency.
               </p>
-              <Button asChild className="bg-blue-600 hover:bg-blue-700">
+              <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
                 <Link to="/about">Learn More About Us</Link>
               </Button>
             </div>
@@ -88,7 +89,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-8 h-8 bg-blue-600 rounded"></div>
+                <ArrowUp className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Heavy Lifting and Transport</h3>
               <p className="text-gray-600">
@@ -98,7 +99,7 @@ const Home = () => {
             
             <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-8 h-8 bg-blue-600 rounded"></div>
+                <MapPin className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Port & Harbour Operation</h3>
               <p className="text-gray-600">
@@ -108,7 +109,7 @@ const Home = () => {
             
             <div className="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-8 h-8 bg-blue-600 rounded"></div>
+                <Users className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Rental and Leasing</h3>
               <p className="text-gray-600">
@@ -118,7 +119,7 @@ const Home = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
               <Link to="/services">View All Services</Link>
             </Button>
           </div>
@@ -129,16 +130,16 @@ const Home = () => {
       <section className="py-16 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Start Your Project?
+            Ready to Start Your Business?
           </h2>
           <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
             Contact us today to discuss your floating crane requirements and discover how we can support your maritime operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600">
+            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold">
               <Link to="/contact">Get Quote</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-900">
+            <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold">
               <Link to="/fleet">View Our Fleet</Link>
             </Button>
           </div>

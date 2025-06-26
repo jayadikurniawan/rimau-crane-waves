@@ -10,7 +10,6 @@ import Services from "./pages/Services";
 import Fleet from "./pages/Fleet";
 import Coverage from "./pages/Coverage";
 import Contact from "./pages/Contact";
-import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,7 +27,6 @@ const App = () => (
           <Route path="/fleet" element={<Fleet />} />
           <Route path="/coverage" element={<Coverage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/gallery" element={<Gallery />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

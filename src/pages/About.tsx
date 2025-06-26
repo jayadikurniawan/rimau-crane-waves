@@ -72,53 +72,52 @@ const About = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">MISSION</h3>
               </div>
-              <p className="text-gray-600 text-center leading-relaxed mb-6">
-                Provide high-quality Floating Crane services, utilizing the latest technology to meet the needs of complex maritime projects.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission Points */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Commitments</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                1
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
+                    1
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Provide high-quality Floating Crane services, utilizing the latest technology to meet the needs of complex maritime projects.
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
+                    2
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Ensure safety and efficiency in every lifting and cargo handling operation at sea, maintaining the highest safety standards.
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
+                    3
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Prioritize sustainability and environmental responsibility, optimizing resource use and minimizing negative impacts on the marine ecosystem.
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
+                    4
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Deliver outstanding customer service, focusing on trust, transparent communication, and timely project completion.
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
+                    5
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Develop a professional and skilled team, committed to providing the best Floating Crane solutions and effectively managing operational challenges at sea.
+                  </p>
+                </div>
               </div>
-              <p className="text-gray-600">
-                Ensure safety and efficiency in every lifting and cargo handling operation at sea, maintaining the highest safety standards.
-              </p>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                2
-              </div>
-              <p className="text-gray-600">
-                Prioritize sustainability and environmental responsibility, optimizing resource use and minimizing negative impacts on the marine ecosystem.
-              </p>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                3
-              </div>
-              <p className="text-gray-600">
-                Deliver outstanding customer service, focusing on trust, transparent communication, and timely project completion.
-              </p>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                4
-              </div>
-              <p className="text-gray-600">
-                Develop a professional and skilled team, committed to providing the best Floating Crane solutions and effectively managing operational challenges at sea.
-              </p>
             </div>
           </div>
         </div>

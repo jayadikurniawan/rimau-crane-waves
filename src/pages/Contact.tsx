@@ -1,32 +1,7 @@
 
 import Layout from '../components/Layout';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useState } from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <Layout>
       {/* Hero Section */}
@@ -41,166 +16,66 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Information & Form */}
+      {/* Contact Information */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
-              
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-xl font-bold text-blue-900 mb-4">Office Address</h3>
-                  <div className="text-gray-600 space-y-2">
-                    <p>Jalan AM Sangaji No.11 BCDE</p>
-                    <p>Kel. Petojo Utara, Kec. Gambir</p>
-                    <p>Jakarta Pusat - 10130</p>
-                    <p>Indonesia</p>
-                  </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Get In Touch</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-xl font-bold text-blue-900 mb-6">Office Address</h3>
+                <div className="text-gray-600 space-y-3 mb-8">
+                  <p className="font-medium">Jalan AM Sangaji No.11 BCDE</p>
+                  <p>Kel. Petojo Utara, Kec. Gambir</p>
+                  <p>Jakarta Pusat - 10130</p>
+                  <p>Indonesia</p>
                 </div>
 
-                <div>
-                  <h3 className="text-xl font-bold text-blue-900 mb-4">Contact Information</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
-                        <div className="w-3 h-3 bg-white rounded-full"></div>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-gray-900">Phone</p>
-                        <p className="text-gray-600">+62 81993334444</p>
-                      </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-6">Contact Information</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-4 h-4 bg-white rounded-full"></div>
                     </div>
-                    
-                    <div className="flex items-center space-x-3">
-                      <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
-                        <div className="w-3 h-3 bg-white rounded-full"></div>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-gray-900">Email</p>
-                        <p className="text-gray-600">rimautrisuksesperkasa@gmail.com</p>
-                      </div>
+                    <div>
+                      <p className="font-semibold text-gray-900 text-lg">Phone</p>
+                      <p className="text-gray-600 text-lg">+62 81993334444</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-4 h-4 bg-white rounded-full"></div>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900 text-lg">Email</p>
+                      <p className="text-gray-600 text-lg">rimautrisuksesperkasa@gmail.com</p>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div>
-                  <h3 className="text-xl font-bold text-blue-900 mb-4">Business Hours</h3>
-                  <div className="text-gray-600 space-y-2">
-                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                    <p>Saturday: 8:00 AM - 4:00 PM</p>
-                    <p>Sunday: Emergency services only</p>
-                    <p className="font-semibold text-blue-900">24/7 Emergency Response Available</p>
-                  </div>
+              <div>
+                <h3 className="text-xl font-bold text-blue-900 mb-6">Business Hours</h3>
+                <div className="text-gray-600 space-y-3 mb-8">
+                  <p><span className="font-medium">Monday - Friday:</span> 8:00 AM - 6:00 PM</p>
+                  <p><span className="font-medium">Saturday:</span> 8:00 AM - 4:00 PM</p>
+                  <p><span className="font-medium">Sunday:</span> Emergency services only</p>
+                  <p className="font-semibold text-blue-900 text-lg mt-4">24/7 Emergency Response Available</p>
                 </div>
 
-                <div>
-                  <h3 className="text-xl font-bold text-blue-900 mb-4">Service Areas</h3>
-                  <div className="text-gray-600">
-                    <p>Primary coverage across Kalimantan ports including Banjarmasin, Balikpapan, Samarinda, Bontang, and 18+ other strategic locations.</p>
-                  </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-6">Service Areas</h3>
+                <div className="text-gray-600">
+                  <p>Primary coverage across Kalimantan ports including Banjarmasin, Balikpapan, Samarinda, Bontang, and 18+ other strategic locations.</p>
                 </div>
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div>
-              <div className="bg-blue-50 rounded-lg p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
-                
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
-                        Full Name *
-                      </label>
-                      <Input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="w-full"
-                        placeholder="Your full name"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
-                        Email Address *
-                      </label>
-                      <Input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="w-full"
-                        placeholder="your.email@company.com"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
-                        Phone Number
-                      </label>
-                      <Input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="w-full"
-                        placeholder="+62 xxx xxxx xxxx"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-semibold text-gray-900 mb-2">
-                        Company Name
-                      </label>
-                      <Input
-                        type="text"
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="w-full"
-                        placeholder="Your company name"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
-                      Message *
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={6}
-                      className="w-full"
-                      placeholder="Please describe your floating crane requirements, project details, timeline, and any specific needs..."
-                    />
-                  </div>
-
-                  <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
-                    Send Message
-                  </Button>
-                </form>
-
-                <div className="mt-6 text-center text-sm text-gray-600">
-                  <p>For urgent requests, please call us directly at <strong>+62 81993334444</strong></p>
-                </div>
-              </div>
+            <div className="mt-12 p-6 bg-blue-50 rounded-lg text-center">
+              <p className="text-lg text-gray-700">
+                For urgent requests, please call us directly at <strong className="text-blue-900">+62 81993334444</strong>
+              </p>
             </div>
           </div>
         </div>

@@ -2,12 +2,14 @@
 import Layout from '../components/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { ArrowUp, MapPin, Users } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       title: "Heavy Lifting and Transport",
       description: "Provide service to lift and transport heavy cargo, such as ship parts, offshore oil and gas equipment, or large construction materials, to and from vessels or dockyards.",
+      icon: ArrowUp,
       features: [
         "Ship parts and components",
         "Offshore oil and gas equipment",
@@ -19,6 +21,7 @@ const Services = () => {
     {
       title: "Port and Harbour Operation",
       description: "Provide services for assist in loading and unloading large cargo at ports and harbors, especially when shore-based cranes are unable to reach ships due to their size or depth.",
+      icon: MapPin,
       features: [
         "Large cargo handling",
         "Deep water operations",
@@ -30,6 +33,7 @@ const Services = () => {
     {
       title: "Rental and Leasing",
       description: "Provide service for Floating Crane rental or leasing to companies in need of temporary lifting solutions for specific projects and operations.",
+      icon: Users,
       features: [
         "Flexible rental terms",
         "Project-specific solutions",
@@ -67,31 +71,39 @@ const Services = () => {
           </div>
 
           <div className="space-y-16">
-            {services.map((service, index) => (
-              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <ul className="space-y-3 mb-8">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                        <span className="text-gray-600">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                  <div className="bg-blue-100 rounded-lg p-8 h-64 flex items-center justify-center">
-                    <div className="text-blue-600 text-6xl font-bold">{index + 1}</div>
+            {services.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+                  <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <IconComponent className="w-6 h-6 text-blue-600" />
+                      </div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                        {service.title}
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 mb-6 leading-relaxed">
+                      {service.description}
+                    </p>
+                    <ul className="space-y-3 mb-8">
+                      {service.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                          <span className="text-gray-600">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                    <div className="bg-blue-100 rounded-lg p-8 h-64 flex items-center justify-center">
+                      <IconComponent className="w-24 h-24 text-blue-600" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -154,10 +166,10 @@ const Services = () => {
             Contact us today to learn more about our floating crane services and how we can support your maritime operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600">
+            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold">
               <Link to="/contact">Get Quote</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-900">
+            <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold">
               <Link to="/fleet">View Our Fleet</Link>
             </Button>
           </div>
