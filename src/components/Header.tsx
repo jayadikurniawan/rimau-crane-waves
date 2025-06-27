@@ -89,7 +89,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/logo.png" 
                 alt="PT Rimau Trisukses Perkasa" 
-                className="h-26 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
           </div>

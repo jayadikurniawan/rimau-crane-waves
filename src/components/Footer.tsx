@@ -31,7 +31,6 @@ const Footer = () => {
               <li>Heavy Lifting and Transport</li>
               <li>Port & Harbour Operation</li>
               <li>Rental and Leasing</li>
-              <li>Maritime Consulting</li>
             </ul>
           </div>
         </div>
