@@ -24,7 +24,59 @@ const Header = () => {
   };
 
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'zh' : 'en');
+    const newLanguage = language === 'en' ? 'zh' : 'en';
+    setLanguage(newLanguage);
+    
+    // Trigger Google Translate
+    if (newLanguage === 'zh') {
+      // Add Google Translate script if not already present
+      if (!document.getElementById('google-translate-script')) {
+        const script = document.createElement('script');
+        script.id = 'google-translate-script';
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.head.appendChild(script);
+        
+        // Initialize Google Translate
+        (window as any).googleTranslateElementInit = function() {
+          new (window as any).google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'zh-CN',
+            autoDisplay: false
+          }, 'google_translate_element');
+          
+          // Auto-trigger translation to Chinese
+          setTimeout(() => {
+            const selectElement = document.querySelector('#google_translate_element select') as HTMLSelectElement;
+            if (selectElement) {
+              selectElement.value = 'zh-CN';
+              selectElement.dispatchEvent(new Event('change'));
+            }
+          }, 1000);
+        };
+        
+        // Add hidden Google Translate element
+        if (!document.getElementById('google_translate_element')) {
+          const translateDiv = document.createElement('div');
+          translateDiv.id = 'google_translate_element';
+          translateDiv.style.display = 'none';
+          document.body.appendChild(translateDiv);
+        }
+      } else {
+        // If script already exists, just trigger translation
+        const selectElement = document.querySelector('#google_translate_element select') as HTMLSelectElement;
+        if (selectElement) {
+          selectElement.value = 'zh-CN';
+          selectElement.dispatchEvent(new Event('change'));
+        }
+      }
+    } else {
+      // Reset to English
+      const selectElement = document.querySelector('#google_translate_element select') as HTMLSelectElement;
+      if (selectElement) {
+        selectElement.value = '';
+        selectElement.dispatchEvent(new Event('change'));
+      }
+    }
   };
 
   return (

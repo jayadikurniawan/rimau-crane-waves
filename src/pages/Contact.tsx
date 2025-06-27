@@ -57,25 +57,19 @@ const Contact = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-blue-900 mb-6">Business Hours</h3>
-                <div className="text-gray-600 space-y-3 mb-8">
-                  <p><span className="font-medium">Monday - Friday:</span> 8:00 AM - 6:00 PM</p>
-                  <p><span className="font-medium">Saturday:</span> 8:00 AM - 4:00 PM</p>
-                  <p><span className="font-medium">Sunday:</span> Emergency services only</p>
-                  <p className="font-semibold text-blue-900 text-lg mt-4">24/7 Emergency Response Available</p>
-                </div>
-
                 <h3 className="text-xl font-bold text-blue-900 mb-6">Service Areas</h3>
-                <div className="text-gray-600">
+                <div className="text-gray-600 mb-8">
                   <p>Primary coverage across Kalimantan ports including Banjarmasin, Balikpapan, Samarinda, Bontang, and 18+ other strategic locations.</p>
                 </div>
-              </div>
-            </div>
 
-            <div className="mt-12 p-6 bg-blue-50 rounded-lg text-center">
-              <p className="text-lg text-gray-700">
-                For urgent requests, please call us directly at <strong className="text-blue-900">+62 81993334444</strong>
-              </p>
+                <div className="p-6 bg-blue-50 rounded-lg">
+                  <h4 className="font-bold text-blue-900 mb-2">24/7 Emergency Response</h4>
+                  <p className="text-gray-600 mb-3">Available for urgent maritime operations</p>
+                  <p className="text-lg text-gray-700">
+                    For urgent requests, please call us directly at <strong className="text-blue-900">+62 81993334444</strong>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -90,13 +84,19 @@ const Contact = () => {
           </div>
           
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="aspect-video bg-blue-100 flex items-center justify-center">
+            <div className="aspect-video">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=106.8100%2C-6.1750%2C106.8300%2C-6.1550&layer=mapnik&marker=-6.1650%2C106.8200"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                title="Office Location Map"
+              ></iframe>
+            </div>
+            <div className="p-4 bg-gray-50">
               <div className="text-center">
-                <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <div className="w-12 h-12 bg-white rounded-full"></div>
-                </div>
-                <h3 className="text-xl font-bold text-blue-900 mb-2">Office Location</h3>
-                <p className="text-blue-700">Jalan AM Sangaji No.11 BCDE, Jakarta Pusat</p>
+                <h3 className="text-lg font-bold text-blue-900 mb-2">PT Rimau Trisukses Perkasa</h3>
+                <p className="text-blue-700">Jalan AM Sangaji No.11 BCDE, Jakarta Pusat - 10130</p>
               </div>
             </div>
           </div>

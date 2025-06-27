@@ -10,37 +10,22 @@ const Services = () => {
       title: "Heavy Lifting and Transport",
       description: "Provide service to lift and transport heavy cargo, such as ship parts, offshore oil and gas equipment, or large construction materials, to and from vessels or dockyards.",
       icon: ArrowUp,
-      features: [
-        // "Ship parts and components",
-        // "Offshore oil and gas equipment",
-        // "Large construction materials",
-        // "Precision handling and positioning",
-        // "Safety-first approach"
-      ]
+      image: "/lovable-uploads/ef52d314-8b93-418f-ad44-7e9e36b01ebe.png",
+      features: []
     },
     {
       title: "Port and Harbour Operation",
       description: "Provide services for assist in loading and unloading large cargo at ports and harbors, especially when shore-based cranes are unable to reach ships due to their size or depth.",
       icon: MapPin,
-      features: [
-        // "Large cargo handling",
-        // "Deep water operations",
-        // "Port accessibility solutions",
-        // "Efficient loading/unloading",
-        // "24/7 operational capability"
-      ]
+      image: "/lovable-uploads/3c8038b4-5c99-4f60-8824-9e3b98f95a78.png",
+      features: []
     },
     {
       title: "Rental and Leasing",
       description: "Provide service for Floating Crane rental or leasing to companies in need of temporary lifting solutions for specific projects and operations.",
       icon: Users,
-      features: [
-        // "Flexible rental terms",
-        // "Project-specific solutions",
-        // "Temporary lifting capabilities",
-        // "Cost-effective options",
-        // "Professional operation support"
-      ]
+      image: "/lovable-uploads/28b254e9-14c9-4187-8505-d033917a1151.png",
+      features: []
     }
   ];
 
@@ -87,18 +72,14 @@ const Services = () => {
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       {service.description}
                     </p>
-                    <ul className="space-y-3 mb-8">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                          <span className="text-gray-600">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                   <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                    <div className="bg-blue-100 rounded-lg p-8 h-64 flex items-center justify-center">
-                      <IconComponent className="w-24 h-24 text-blue-600" />
+                    <div className="rounded-lg overflow-hidden shadow-xl">
+                      <img 
+                        src={service.image} 
+                        alt={service.title}
+                        className="w-full h-64 object-cover"
+                      />
                     </div>
                   </div>
                 </div>
