@@ -86,13 +86,13 @@ const Fleet = () => {
 
   const VesselCard = ({ vessel }: { vessel: typeof rimauStar }) => (
     <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-      <div className="relative h-80 bg-gray-200">
+      <div className="relative h-90 bg-gray-200">
         <img 
           src={vessel.image} 
           alt={vessel.name}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div> */}
         <div className="absolute bottom-6 left-6">
           <h3 className="text-3xl font-bold text-white mb-2">{vessel.name}</h3>
           <div className="flex items-center space-x-4 text-white/90">

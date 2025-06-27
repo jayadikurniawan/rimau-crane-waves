@@ -137,7 +137,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold">
-              <Link to="/contact">Get Location</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="bg-white text-black hover:bg-gray-200 font-semibold border-2 border-black">
               <Link to="/fleet">View Our Fleet</Link>
