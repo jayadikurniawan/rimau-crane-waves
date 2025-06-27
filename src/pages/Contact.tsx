@@ -40,7 +40,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-lg">Phone</p>
-                      <p className="text-gray-600 text-lg">+62 81993334444</p>
+                      <p className="text-gray-600 text-lg">+62 81913333888</p>
                     </div>
                   </div>
                   
@@ -66,7 +66,7 @@ const Contact = () => {
                   <h4 className="font-bold text-blue-900 mb-2">24/7 Emergency Response</h4>
                   <p className="text-gray-600 mb-3">Available for urgent maritime operations</p>
                   <p className="text-lg text-gray-700">
-                    For urgent requests, please call us directly at <strong className="text-blue-900">+62 81993334444</strong>
+                    For urgent requests, please call us directly at <strong className="text-blue-900">+62 81913333888</strong>
                   </p>
                 </div>
               </div>

@@ -11,7 +11,7 @@ const Home = () => {
       <section className="relative bg-gradient-to-br from-blue-900 to-blue-700 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
         <div 
-          className="relative min-h-[80vh] flex items-center bg-cover bg-center bg-no-repeat"
+          className="relative min-h-[100vh] flex items-center bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('/lovable-uploads/bg-hd.jpeg')`
           }}

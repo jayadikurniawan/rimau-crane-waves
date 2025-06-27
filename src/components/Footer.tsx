@@ -19,7 +19,7 @@ const Footer = () => {
               <p>Jalan AM Sangaji No.11 BCDE</p>
               <p>Kel. Petojo Utara, Kec. Gambir</p>
               <p>Jakarta Pusat - 10130</p>
-              <p>Phone: +62 81993334444</p>
+              <p>Phone: +62 81913333888</p>
               <p>Email: rimautrisuksesperkasa@gmail.com</p>
             </div>
           </div>

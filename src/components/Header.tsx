@@ -87,9 +87,9 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/64233dd3-1916-49e0-9a30-e9d6d9e5ba11.png" 
+                src="/lovable-uploads/logo.png" 
                 alt="PT Rimau Trisukses Perkasa" 
-                className="h-12 w-auto"
+                className="h-26 w-auto"
               />
             </Link>
           </div>
