@@ -13,7 +13,7 @@ const Home = () => {
         <div 
           className="relative min-h-[80vh] flex items-center bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/lovable-uploads/a8dc817b-ded7-4795-b153-9c18b8a2da65.png')`
+            backgroundImage: `url('/lovable-uploads/bg-hd.jpeg')`
           }}
         >
           <div className="absolute inset-0 bg-blue-900/60"></div>
@@ -65,7 +65,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/ffa50296-b11b-489e-af4a-4057d8b248f4.png" 
+                src="/lovable-uploads/abouthome.jpeg" 
                 alt="Floating Crane Operations" 
                 className="rounded-lg shadow-xl w-full h-auto"
               />
