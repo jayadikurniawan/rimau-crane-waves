@@ -29,7 +29,7 @@ const Home = () => {
                 <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold">
                   <Link to="/services">Our Services</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold">
+                <Button asChild variant="outline" size="lg" className="bg-white text-black hover:bg-gray-200 font-semibold border-2 border-white">
                   <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
@@ -137,9 +137,9 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold">
-              <Link to="/contact">Get Quote</Link>
+              <Link to="/contact">Get Location</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold">
+            <Button asChild variant="outline" size="lg" className="bg-white text-black hover:bg-gray-200 font-semibold border-2 border-black">
               <Link to="/fleet">View Our Fleet</Link>
             </Button>
           </div>

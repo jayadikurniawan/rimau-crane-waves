@@ -11,11 +11,11 @@ const Services = () => {
       description: "Provide service to lift and transport heavy cargo, such as ship parts, offshore oil and gas equipment, or large construction materials, to and from vessels or dockyards.",
       icon: ArrowUp,
       features: [
-        "Ship parts and components",
-        "Offshore oil and gas equipment",
-        "Large construction materials",
-        "Precision handling and positioning",
-        "Safety-first approach"
+        // "Ship parts and components",
+        // "Offshore oil and gas equipment",
+        // "Large construction materials",
+        // "Precision handling and positioning",
+        // "Safety-first approach"
       ]
     },
     {
@@ -23,11 +23,11 @@ const Services = () => {
       description: "Provide services for assist in loading and unloading large cargo at ports and harbors, especially when shore-based cranes are unable to reach ships due to their size or depth.",
       icon: MapPin,
       features: [
-        "Large cargo handling",
-        "Deep water operations",
-        "Port accessibility solutions",
-        "Efficient loading/unloading",
-        "24/7 operational capability"
+        // "Large cargo handling",
+        // "Deep water operations",
+        // "Port accessibility solutions",
+        // "Efficient loading/unloading",
+        // "24/7 operational capability"
       ]
     },
     {
@@ -35,11 +35,11 @@ const Services = () => {
       description: "Provide service for Floating Crane rental or leasing to companies in need of temporary lifting solutions for specific projects and operations.",
       icon: Users,
       features: [
-        "Flexible rental terms",
-        "Project-specific solutions",
-        "Temporary lifting capabilities",
-        "Cost-effective options",
-        "Professional operation support"
+        // "Flexible rental terms",
+        // "Project-specific solutions",
+        // "Temporary lifting capabilities",
+        // "Cost-effective options",
+        // "Professional operation support"
       ]
     }
   ];
@@ -169,7 +169,7 @@ const Services = () => {
             <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold">
               <Link to="/contact">Get Quote</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold">
+            <Button asChild variant="outline" size="lg" className="bg-white text-black hover:bg-gray-200 font-semibold border-2 border-black">
               <Link to="/fleet">View Our Fleet</Link>
             </Button>
           </div>
