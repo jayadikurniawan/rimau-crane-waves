@@ -2,7 +2,7 @@
 import Layout from '../components/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowUp, MapPin, Users } from 'lucide-react';
+import { ArrowUp, MapPin, Users, Shield, Cpu, Clock, HeadphonesIcon } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -78,7 +78,6 @@ const Services = () => {
                       <img 
                         src={service.image} 
                         alt={service.title}
-                        // className="w-full h-64 object-cover"
                         className="w-[600px] h-[500px] object-cover"
                       />
                     </div>
@@ -105,7 +104,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 bg-white rounded"></div>
+                <Shield className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Safety First</h3>
               <p className="text-gray-600 text-sm">Highest safety standards in all operations</p>
@@ -113,7 +112,7 @@ const Services = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 bg-white rounded"></div>
+                <Cpu className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Latest Technology</h3>
               <p className="text-gray-600 text-sm">Modern equipment and advanced systems</p>
@@ -121,7 +120,7 @@ const Services = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 bg-white rounded"></div>
+                <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Experienced Team</h3>
               <p className="text-gray-600 text-sm">Skilled professionals with maritime expertise</p>
@@ -129,7 +128,7 @@ const Services = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-8 h-8 bg-white rounded"></div>
+                <HeadphonesIcon className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">24/7 Support</h3>
               <p className="text-gray-600 text-sm">Round-the-clock operational capability</p>
