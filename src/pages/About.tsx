@@ -1,6 +1,5 @@
-
 import Layout from '../components/Layout';
-import { Building2, Ship, Crane, ExternalLink } from 'lucide-react';
+import { Building2, Ship, Construction, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const About = () => {
@@ -22,7 +21,7 @@ const About = () => {
     {
       name: "Rimau Crane & Equipment",
       description: "Menyewakan crane, alat berat, dan armada pendukung kegiatan pelabuhan, pertambangan, dan industri.",
-      icon: Crane,
+      icon: Construction,
       link: "#",
       hasLink: false
     }
