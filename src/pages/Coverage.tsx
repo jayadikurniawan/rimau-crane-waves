@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import { Map, Lightning, Compass, Gear } from 'lucide-react';
+import { Map, Zap, Compass, Settings } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
 const Coverage = () => {
@@ -219,7 +219,7 @@ const Coverage = () => {
 
               <div className="text-center bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Lightning className="w-8 h-8 text-white" />
+                  <Zap className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Quick Response</h3>
                 <p className="text-gray-600 text-sm">Rapid deployment to operational areas</p>
@@ -235,7 +235,7 @@ const Coverage = () => {
 
               <div className="text-center bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Gear className="w-8 h-8 text-white" />
+                  <Settings className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Flexible Services</h3>
                 <p className="text-gray-600 text-sm">Adaptable solutions for various port requirements</p>

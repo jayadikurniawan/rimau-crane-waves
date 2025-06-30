@@ -1,7 +1,8 @@
+
 import Layout from '../components/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowUp, MapPin, Users, Shield, Cpu, Clock, HeadphonesIcon } from 'lucide-react';
+import { ArrowUp, MapPin, Users, Shield, Zap, Clock, HeadphonesIcon } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
 const Services = () => {
