@@ -15,6 +15,7 @@ const Header = () => {
     { name: 'Fleet & Equipment', href: '/fleet' },
     { name: 'Operational Coverage', href: '/coverage' },
     { name: 'Contact Us', href: '/contact' },
+    { name: 'Our Groups', href: '/business-units' },
   ];
 
   const isActive = (href: string) => {
