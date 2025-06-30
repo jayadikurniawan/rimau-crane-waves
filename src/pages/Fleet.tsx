@@ -1,5 +1,6 @@
-
 import Layout from '../components/Layout';
+import CraneContactForm from '../components/CraneContactForm';
+import { Helmet } from 'react-helmet-async';
 
 const Fleet = () => {
   const rimauStar = {
@@ -92,7 +93,6 @@ const Fleet = () => {
           alt={vessel.name}
           className="w-full h-full object-cover"
         />
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div> */}
         <div className="absolute bottom-6 left-6">
           <h3 className="text-3xl font-bold text-white mb-2">{vessel.name}</h3>
           <div className="flex items-center space-x-4 text-white/90">
@@ -121,6 +121,11 @@ const Fleet = () => {
             <div className="text-2xl font-bold text-blue-600">{vessel.crane.loadingRate}</div>
             <div className="text-sm text-gray-600">Loading Rate</div>
           </div>
+        </div>
+
+        {/* Contact Us Button */}
+        <div className="mb-8">
+          <CraneContactForm craneName={vessel.name} />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -301,86 +306,94 @@ const Fleet = () => {
   );
 
   return (
-    <Layout>
-      {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Fleet & Equipment</h1>
-            <p className="text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
-              Our modern fleet of floating cranes equipped with the latest technology and safety systems
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Fleet Overview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Floating Crane Fleet
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We operate two state-of-the-art self-propelled crane barges designed for complex maritime operations
-            </p>
-          </div>
-
-          <div className="space-y-16">
-            <VesselCard vessel={rimauStar} />
-            <VesselCard vessel={rimauPacific} />
-          </div>
-        </div>
-      </section>
-
-      {/* Fleet Capabilities */}
-      <section className="py-16 bg-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Fleet Capabilities
-            </h2>
-            <p className="text-xl text-gray-600">
-              Advanced technology and specifications that ensure reliable maritime operations
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <>
+      <Helmet>
+        <title>Fleet & Equipment - Floating Cranes | PT Rimau Trisukses Perkasa</title>
+        <meta name="description" content="Explore our modern fleet of floating cranes including RIMAU STAR and RIMAU PACIFIC - equipped with latest technology and safety systems for maritime operations." />
+        <meta name="keywords" content="floating crane fleet, RIMAU STAR, RIMAU PACIFIC, crane specifications, maritime equipment Indonesia, crane rental fleet" />
+      </Helmet>
+      
+      <Layout>
+        {/* Hero Section */}
+        <section className="relative py-20 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">50T</span>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Lifting Capacity</h3>
-              <p className="text-gray-600 text-sm">50 tons safe working load for both vessels</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">35M</span>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Operating Range</h3>
-              <p className="text-gray-600 text-sm">35 meter operational range capability</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">18K</span>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Loading Rate</h3>
-              <p className="text-gray-600 text-sm">18,000 tons per day loading capacity</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">BKI</span>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Classification</h3>
-              <p className="text-gray-600 text-sm">BKI certified for safety and compliance</p>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Fleet & Equipment</h1>
+              <p className="text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
+                Our modern fleet of floating cranes equipped with the latest technology and safety systems
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-    </Layout>
+        </section>
+
+        {/* Fleet Overview */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Our Floating Crane Fleet
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                We operate two state-of-the-art self-propelled crane barges designed for complex maritime operations
+              </p>
+            </div>
+
+            <div className="space-y-16">
+              <VesselCard vessel={rimauStar} />
+              <VesselCard vessel={rimauPacific} />
+            </div>
+          </div>
+        </section>
+
+        {/* Fleet Capabilities */}
+        <section className="py-16 bg-blue-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Fleet Capabilities
+              </h2>
+              <p className="text-xl text-gray-600">
+                Advanced technology and specifications that ensure reliable maritime operations
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">50T</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Lifting Capacity</h3>
+                <p className="text-gray-600 text-sm">50 tons safe working load for both vessels</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">35M</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Operating Range</h3>
+                <p className="text-gray-600 text-sm">35 meter operational range capability</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">18K</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Loading Rate</h3>
+                <p className="text-gray-600 text-sm">18,000 tons per day loading capacity</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">BKI</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Classification</h3>
+                <p className="text-gray-600 text-sm">BKI certified for safety and compliance</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Layout>
+    </>
   );
 };
 
