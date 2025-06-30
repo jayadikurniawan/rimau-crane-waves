@@ -86,7 +86,7 @@ const Contact = () => {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="aspect-video">
               <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=106.8100%2C-6.1750%2C106.8300%2C-6.1550&layer=mapnik&marker=-6.1650%2C106.8200"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=106.8125%2C-6.1680%2C106.8160%2C-6.1660&layer=mapnik&marker=-6.167024%2C106.814088"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
