@@ -72,64 +72,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Business Units */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Business Units
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover the diverse portfolio of companies under the Rimau Group umbrella
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {businessUnits.map((unit, index) => {
-              const IconComponent = unit.icon;
-              return (
-                <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <IconComponent className="w-8 h-8 text-blue-600" />
-                    </div>
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900">
-                      {unit.name}
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {unit.description}
-                  </p>
-                  {unit.hasLink && (
-                    <Button 
-                      asChild 
-                      variant="outline" 
-                      className="w-full group hover:bg-blue-50 hover:border-blue-300"
-                    >
-                      <a 
-                        href={unit.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center space-x-2"
-                      >
-                        <span>Visit Website</span>
-                        <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </a>
-                    </Button>
-                  )}
-                  {!unit.hasLink && (
-                    <div className="text-center">
-                      <span className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                        Current Website
-                      </span>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Vision & Mission */}
       <section className="py-16 bg-blue-50">
@@ -203,6 +146,65 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Business Units */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Business Units
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover the diverse portfolio of companies under the Rimau Group umbrella
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {businessUnits.map((unit, index) => {
+              const IconComponent = unit.icon;
+              return (
+                <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <IconComponent className="w-8 h-8 text-blue-600" />
+                    </div>
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900">
+                      {unit.name}
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    {unit.description}
+                  </p>
+                  {unit.hasLink && (
+                    <Button 
+                      asChild 
+                      variant="outline" 
+                      className="w-full group hover:bg-blue-50 hover:border-blue-300"
+                    >
+                      <a 
+                        href={unit.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center space-x-2"
+                      >
+                        <span>Visit Website</span>
+                        <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </a>
+                    </Button>
+                  )}
+                  {!unit.hasLink && (
+                    <div className="text-center">
+                      <span className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                        Current Website
+                      </span>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
